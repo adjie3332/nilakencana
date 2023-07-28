@@ -1,0 +1,560 @@
+* {
+  font-family: "Roboto", "Open Sans", "sans-serif";
+  line-height: 20px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+img{
+  width:100px;
+  max-width:100%;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.layar-dalam {
+  width: 100%;
+/*   max-width: 1000px; */
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.layar-penuh {
+  width: 100%;
+}
+
+nav {
+  z-index: 100;
+  text-align: center;
+  position: fixed;
+  border-bottom: 1px solid #999999;
+  line-height: 60px;
+  width: 100%;
+  transition: background-color 0.5s ease;
+}
+
+nav.putih {
+  background-color: #fff;
+}
+
+nav .logo {
+  float: left;
+  position: relative;
+  line-height: 80px;
+  text-align: center;
+}
+
+nav .logo img {
+  vertical-align: middle;
+  width: 70px;
+  height: 65px;
+}
+
+nav .menu {
+  float: right;
+  height: 30px;
+  margin-top: 13px;
+  max-width: 500px;
+}
+
+nav .menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav .menu ul li {
+  list-style-type: none;
+  float: left;
+  line-height: 60px;
+  font-style: bold;
+}
+
+nav ul li a {
+  color: #fff;
+  text-align: center;
+  padding: 0px 16px 0px 16px;
+  text-decoration: none;
+  font-style: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  color: rgb(0, 0, 0);
+}
+
+        /* pengaturan header */
+        
+        header {
+          position: relative;
+          height: 56.25vw;
+          width: 100%;
+          overflow: hidden;
+          z-index: 2;
+      }
+      
+      header video {
+          position: absolute;
+          top: 0;
+          left: 0;
+          object-fit: cover;
+          z-index: -2;
+          width: 100%;
+      }
+      
+      header .intro {
+          z-index: 100;
+          color: #ffffff;
+          text-shadow: rgb(0, 0, 0) 0px 7px 8px;
+          text-align: center;
+          position: relative;
+          top: 50%;
+      }
+      
+      header .intro h3 {
+          font-size: 5vw;
+          margin: 0;
+          padding: 0;
+          text-align: center;
+      }
+      
+      header .intro p {
+          font-size: 2.5vw;
+          margin-top: 2vw;
+          padding: 0;
+      }
+      
+      .tombol {
+          background-color: #171717;
+          height: 30px;
+          line-height: 32px;
+          color: #fff;
+          text-decoration: none;
+          display: inline-block;
+          padding: 0px 20px 0px 20px;
+          font-size: 13px;
+          border-radius: 15px;
+          margin-top: 3px;
+      }
+      
+      header .overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          background-color: #ffffff;
+          opacity: 50%;
+          z-index: -1;
+      }
+      
+      .tombol-menu {
+          position: absolute;
+          top: 1.7rem;
+          right: 1rem;
+          flex-direction: column;
+          justify-content: space-between;
+          width: 30px;
+          height: 20px;
+      }
+      
+      .tombol-menu .garis {
+          height: 3px;
+          background-color: #ffffff;
+          font-style: bold;
+      }
+
+    /* mengatur jarak setiap section */
+    section {
+      padding: 50px 0;
+    }
+
+    section h3 {
+      font-size: 25pt;
+    }
+
+    section h3::after {
+      content: "";
+      border-bottom: 5px solid #000000;
+      width: 52px;
+      display: block;
+      margin: 20px auto;
+    }
+
+    #aboutus,
+    #profile,
+    #gallery,
+    #sejarah {
+      text-align: center;
+    }
+
+    section.abuabu {
+      background-color: #ffffff;
+    }
+    section .konten-isi p {
+      font-style: normal;
+    }
+    
+    nav.putih {
+      background-color: #ffffff;
+    }
+    
+    nav.putih .tombol-menu .garis {
+      background-color: #333;
+    }
+    
+    nav.putih ul li a {
+      color: #333;
+    }
+    
+    nav .logo img.hitam {
+      display: none;
+    }
+
+    .tim,
+    .profile{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .sejarah {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+    .profile h6,
+    .tim h6 {
+      margin: 0;
+      margin-top: 20px;
+      padding: 0;
+      font-size: 15pt;
+      font-weight: bold;
+    }
+
+    .profile p a {
+      text-decoration: none;
+    }
+
+    .profile img {
+      width: 50px;
+    }
+
+    .profile div,
+    .tim div {
+      text-align: center;
+      width: 100%;
+      max-width: 320px;
+      margin-bottom: 30px;
+    }
+
+    .tim img {
+      width: 30vw;
+      box-shadow: 20px 20px 10px #868585;
+      border-radius: 10px;
+    }
+
+    section.quote {
+      background: url("../asset/bg.jpg") no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      background-size: cover;
+      text-align: center;
+      color: #ff0000;
+      padding: 30px;
+      background-size: 100vw;
+      font-style: italic;
+    }
+
+    section.quote .layar-dalam p {
+      display: inline;
+      padding: 0 40px;
+      font-size: 20px;
+    }
+
+@media screen and (max-width: 768px) {
+  .layar-dalam {
+    width: 90%;
+    max-width: none;
+  }
+  nav .menu ul {
+    display: none;
+    margin-top: 20px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    width: 100%;
+    color: #ffffff;
+}
+nav .menu ul li {
+    width: 100%;
+    border: 2px solid #000000;
+    background-color: rgb(67, 67, 67);
+    line-height: 30px;
+    font-size: 12px;
+    float: none;
+    margin-right: 0;
+    margin-bottom: 1px;
+}
+
+nav .menu ul li:hover {
+    background-color: #000000;
+}
+nav .menu ul li a {
+    color: #ffffff;
+}
+.tombol-menu {
+    display: flex;
+}
+
+  .profile {
+      display: block;
+  }
+  .profile div,
+  .tim div {
+    width: 100%;
+    max-width: none;
+    padding-bottom: 30px;
+  }
+}
+
+/* GALLERY */
+
+      .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        display: grid;
+        grid-row-gap: 20px;
+        grid-column-gap: 20px;
+/*         grid-template-columns: auto auto auto; */
+        background-color: #ffffff;
+        padding: 0 15px; 
+      }
+  
+      .grid-item {
+        color: white;
+        background-color: #000000;
+        border: 2px solid rgba(0, 0, 0, 0.979);
+        padding: 8px;
+        text-align: center;
+        border-radius: 15px;
+      }
+  
+      .grid-item:hover {
+        transition: all 0.3s ease-in-out;
+        transform: scale(1.2);
+      }
+
+      @media (max-width: 768px) {
+        .grid-container {
+          grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        }
+      }
+
+    /* FOOTER */
+
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+    * {
+      font-family: Open Sans;
+    }
+
+    .footersec {
+      width: 100%;
+      display: inline-block;
+      background: #ffffff;
+      text-align: center;
+      font-size: 30px;
+      font-weight: 700;
+    }
+
+    /* mengatur kotak footer */
+
+    .footer-distributed {
+      background: #3a3a3a;
+      box-sizing: border-box;
+      width: 100%;
+      text-align: center;
+      font: bold 18px sans-serif;
+      padding: 30px;
+      padding-top: 30px;
+      padding-right: 50px;
+      padding-left: 50px;
+    }
+
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right {
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    /* Footer left */
+
+    .footer-distributed .footer-left {
+      width: 25%;
+    }
+
+    /* The company logo */
+
+    .footer-distributed h1 {
+      color: #ffffff;
+      font: normal 28px 'Open Sans', cursive;
+      margin: 0;
+    }
+
+    .footer-distributed h3 span {
+      color: rgb(145, 151, 151);
+      font-size: 25pt;
+    }
+
+    /* Footer links */
+
+    .footer-distributed .footer-links {
+      color: #ffffff;
+      margin: 20px 0 12px;
+      padding: 0;
+    }
+
+    .footer-distributed .footer-links a {
+      display: inline-block;
+      line-height: 1.8;
+      font-weight: 400;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .footer-distributed .footer-company-name {
+      color: #f8ecec;
+      font-size: 14px;
+      font-weight: normal;
+      text-align: center;
+      margin-top: 7px;
+      font-style: bold;
+    }
+
+    /* Footer Center */
+
+    .footer-distributed .footer-center {
+      width: 30%;
+    }
+
+    .footer-distributed .footer-center i {
+      background-color: #33383b;
+      color: #ffffff;
+      font-size: 30px;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 42px;
+      margin: 10px 15px;
+      vertical-align: middle;
+    }
+
+    .footer-distributed .footer-center i.fa-envelope {
+      font-size: 20px;
+      line-height: 38px;
+    }
+
+    .footer-distributed .footer-links a:before {
+      content: "|";
+      font-weight: 300;
+      font-size: 20px;
+      left: 0;
+      color: #fff;
+      display: inline-block;
+      padding-right: 5px;
+    }
+
+    .footer-distributed .footer-links .link-1:before {
+      content: none;
+    }
+
+    /* Footer Right */
+
+    .footer-distributed .footer-right {
+      width: 25%;
+    }
+
+    .footer-distributed .footer-company-about {
+      line-height: 20px;
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: normal;
+      margin: 0;
+    }
+
+    .footer-distributed .footer-company-about span {
+      display: block;
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .footer-distributed .footer-icons {
+      margin-top: 30px;
+    }
+
+    .footer-distributed .footer-icons a {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      margin-right: 3px;
+      margin-bottom: 5px;
+    }
+
+    /* If you don't want the footer to be responsive, remove these media queries */
+
+    @media (max-width: 992px) {
+
+      .footer-distributed {
+        font: bold 14px sans-serif;
+      }
+
+      .footer-distributed .footer-left,
+      .footer-distributed .footer-center,
+      .footer-distributed .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+      }
+
+      .footer-distributed .footer-center i {
+        margin-left: 0;
+      }
+
+      .footer-distributed .footer-links a:before {
+        display: inline-block;
+      }
+
+    }
+
+/* /scrollbar/ */
+
+::-webkit-scrollbar {
+  width: 12px;
+  margin-right: 5px;
+}
+
+::-webkit-scrollbar-track {
+  border: 15px solid #000000;
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(30deg, #ffffff, #9db0b0);
+  border-radius: 4px;
+}
